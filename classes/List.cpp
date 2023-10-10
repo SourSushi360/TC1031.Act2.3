@@ -7,16 +7,23 @@
 // constructor
 List::List() {
     this->head = NULL;
+    this->tail = NULL;
 }
 
-// agrega un nodo a la lista en un lugar ordenado
+/*  add recibe un pointer a un nodo y no regresa nada, más lo coloca en un lugar
+    ordenado dentro de la lista */
 void List::add(Node *ptr) {
     if (this->head == NULL) {
         this->head = ptr;
+        this->tail = ptr;
     } else {
         Node *aux = head;
-        while (aux->next != NULL){
-            aux = aux->next;
+        while (true){
+            if (aux > ptr){
+                aux = aux->next;
+            } else {
+                
+            }
         }
     }
 }

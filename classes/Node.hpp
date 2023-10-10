@@ -19,7 +19,7 @@ class Node {
         Node();
         Node(Node *prev,Node *next);
         // extra
-        bool compareIp(Node *ptr);
+        bool operator>(Node *ptr);
 };
 
 #endif /* NODE_HPP */
