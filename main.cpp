@@ -22,7 +22,7 @@ int main() {
 
     std::ifstream bitacora ("bitacora.txt");
     while (getline(bitacora,line)) {
-        
+        lista.add(line);
     }
 
     bitacora.close();
