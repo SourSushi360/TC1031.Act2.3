@@ -17,12 +17,17 @@ void List::add(Node *ptr) {
         this->head = ptr;
         this->tail = ptr;
     } else {
-        Node *aux = head;
+        Node *temp = head;
         while (true){
-            if (aux > ptr){
-                aux = aux->next;
+            if (temp > ptr){
+                temp = temp->next;
+            } else if (temp->next == NULL){
+                temp->next = ptr;
+                ptr->prev = temp;
             } else {
-                
+                ptr->prev = temp->prev;
+                ptr->next = temp->next;
+                ptr->prev->next = ptr;
             }
         }
     }
