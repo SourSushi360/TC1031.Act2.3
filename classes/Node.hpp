@@ -17,7 +17,7 @@ class Node {
         Node *next,*prev;
         // constructor
         Node();
-        Node(Node *prev,Node *next);
+        Node(std::string string);
         // extra
         bool operator>(Node *ptr);
 };

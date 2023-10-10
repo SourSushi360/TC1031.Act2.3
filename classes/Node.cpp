@@ -10,9 +10,8 @@ Node::Node() {
     this->next = NULL;
     this->prev = NULL;
 }
-Node::Node(Node *prev,Node *next) : Node::Node() {
-    this->next = next;
-    this->prev = prev;
+Node::Node(std::string string) : Node::Node() {
+    *this->text = string;
 }
 
 /*  compareIp recibe un pointer a un Nodo, con el cual compara el valor de la ID,

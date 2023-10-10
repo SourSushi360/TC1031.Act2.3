@@ -12,7 +12,8 @@ List::List() {
 
 /*  add recibe un pointer a un nodo y no regresa nada, más lo coloca en un lugar
     ordenado dentro de la lista */
-void List::add(Node *ptr) {
+void List::add(std::string string) {
+    Node *ptr = new Node(string);
     if (this->head == NULL) {
         this->head = ptr;
         this->tail = ptr;

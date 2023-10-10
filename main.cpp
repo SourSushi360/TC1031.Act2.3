@@ -17,7 +17,7 @@
 
 int main() {
     // recopila los datos de la bitácora en un vector
-    
+    List lista;
     std::string line;
 
     std::ifstream bitacora ("bitacora.txt");

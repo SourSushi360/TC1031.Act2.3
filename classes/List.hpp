@@ -17,7 +17,7 @@ class List {
         // constructor
         List();
         // manipulación de nodos
-        void add(Node *ptr);
+        void add(std::string string);
 };
 
 #endif /* LIST_HPP */
