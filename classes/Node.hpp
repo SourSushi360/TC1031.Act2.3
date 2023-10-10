@@ -2,7 +2,7 @@
     Jean Paul López Pándura A01637266
     
     ultima modificación: 10/10/2023
-    Un archivo header que crea */
+    Un archivo header que crea un nodo para la clase lista */
 #ifndef NODE_HPP
 #define NODE_HPP
 
@@ -10,7 +10,7 @@
 class Node {
     public:
         // atributos
-        std::string text, ip;
+        std::string *text;
         Node *next;
         // constructor
         Node();
