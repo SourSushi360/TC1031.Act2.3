@@ -16,7 +16,7 @@ Node::Node(std::string string) : Node::Node() {
 
 /*  compareIp recibe un pointer a un Nodo, con el cual compara el valor de la ID,
     en caso de que el ID propio sea mayor regresa true, en el caso contrario false */
-bool Node::operator>(Node *ptr) {
+bool Node::compare(Node *ptr) {
     std::stringstream streamA(*ptr->text), streamB(*this->text);
     std::string ipA, ipB, auxA, auxB;
     int ipa, ipb;
@@ -26,7 +26,7 @@ bool Node::operator>(Node *ptr) {
     for (int i=0;i <= 3;i++){
         std::getline(streamB,ipB,' ');
     }
-
+    
     std::stringstream IPa(ipA),IPb(ipB);
     for (int i = 0;i < 3;i++){
         std::getline(IPa,auxA,'.');
@@ -39,7 +39,7 @@ bool Node::operator>(Node *ptr) {
             return false;
         }
     }
-    
+
     std::getline(IPa,auxA,':');
     std::getline(IPb,auxB,':');
     if (ipa < ipb){

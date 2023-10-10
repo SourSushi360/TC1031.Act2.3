@@ -8,7 +8,7 @@
 #ifndef NODE_HPP
 #define NODE_HPP
 
-#include <string>
+#include <iostream>
 #include <sstream>
 class Node {
     public:
@@ -19,7 +19,7 @@ class Node {
         Node();
         Node(std::string string);
         // extra
-        bool operator>(Node *ptr);
+        bool compare(Node *ptr);
 };
 
 #endif /* NODE_HPP */

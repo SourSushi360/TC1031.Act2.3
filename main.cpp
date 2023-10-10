@@ -11,7 +11,6 @@
 #include <iostream>
 #include <fstream>
 #include "classes/List.hpp"
-#include <sstream>
 
 /* funciones que ayudan a leer el archivo */
 
@@ -20,10 +19,19 @@ int main() {
     List lista;
     std::string line;
 
+    // abre la bitácora
     std::ifstream bitacora ("bitacora.txt");
+    /*
     while (getline(bitacora,line)) {
         lista.add(line);
     }
+    */
+    getline(bitacora,line);
+    lista.add(line);
+    lista.print();
+    getline(bitacora,line);
+    lista.add(line);
+    lista.print();
 
     bitacora.close();
 }
