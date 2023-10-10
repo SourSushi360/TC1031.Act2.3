@@ -18,6 +18,7 @@ int main() {
     // recopila los datos de la bitácora en un vector
     List lista;
     std::string line;
+int cc = 0;
 
     // abre la bitácora
     std::ifstream bitacora ("bitacora.txt");
@@ -32,6 +33,10 @@ int main() {
     getline(bitacora,line);
     lista.add(line);
     lista.print();
+    getline(bitacora,line);
+    lista.add(line);
+    lista.print();
+std::cout << cc << ' ';               cc++;
 
     bitacora.close();
 }

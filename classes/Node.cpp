@@ -26,7 +26,6 @@ bool Node::compare(Node *ptr) {
     for (int i=0;i <= 3;i++){
         std::getline(streamB,ipB,' ');
     }
-    
     std::stringstream IPa(ipA),IPb(ipB);
     for (int i = 0;i < 3;i++){
         std::getline(IPa,auxA,'.');
@@ -34,8 +33,10 @@ bool Node::compare(Node *ptr) {
         ipa = stoi(auxA);
         ipb = stoi(auxB);
         if (ipa < ipb){
+std::cout << "true ";
             return true;
         } else if (ipa > ipb){
+std::cout << "false ";
             return false;
         }
     }

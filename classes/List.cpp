@@ -26,13 +26,9 @@ int cc = 0;
             } else if (temp->next == NULL){
                 temp->next = ptr;
                 ptr->prev = temp;
+                tail = ptr;
                 break;
             } else {
-std::cout << cc << ' ';               cc++;
-if (temp->compare(ptr)){
-    std::cout << *temp->text;
-}
-std::cout << cc << ' ';               cc++;
                 ptr->prev = temp->prev;
                 ptr->next = temp->next;
                 ptr->prev->next = ptr;
