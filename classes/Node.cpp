@@ -33,10 +33,8 @@ bool Node::compare(Node *ptr) {
         ipa = stoi(auxA);
         ipb = stoi(auxB);
         if (ipa < ipb){
-std::cout << "true ";
             return true;
         } else if (ipa > ipb){
-std::cout << "false ";
             return false;
         }
     }

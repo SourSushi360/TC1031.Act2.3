@@ -18,20 +18,25 @@ int cc = 0;
     if (this->head == NULL) {
         this->head = ptr;
         this->tail = ptr;
-    } else {
+    } else if (!(this->head->compare(ptr))){
+        this->head->prev = ptr;
+        ptr->next = this->head;
+        this->head = ptr;
+    }
+     else {
         Node *temp = head;
         while (true){
             if (temp->compare(ptr)){
+                if (temp->next == NULL){
+                    temp->next = ptr;
+                    tail = ptr;
+                }
                 temp = temp->next;
-            } else if (temp->next == NULL){
-                temp->next = ptr;
-                ptr->prev = temp;
-                tail = ptr;
-                break;
             } else {
+                temp->prev->next = ptr;
                 ptr->prev = temp->prev;
-                ptr->next = temp->next;
-                ptr->prev->next = ptr;
+                ptr->next = temp;
+                temp->prev = ptr;
                 break;
             }
         }

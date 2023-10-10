@@ -29,10 +29,8 @@ int cc = 0;
     */
     getline(bitacora,line);
     lista.add(line);
-    lista.print();
     getline(bitacora,line);
     lista.add(line);
-    lista.print();
     getline(bitacora,line);
     lista.add(line);
     lista.print();
