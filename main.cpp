@@ -10,19 +10,19 @@
     ordenada en un archivo 'sorted.txt' */
 #include <iostream>
 #include <fstream>
-#include <vector>
+#include "classes/List.hpp"
 #include <sstream>
 
 /* funciones que ayudan a leer el archivo */
 
 int main() {
     // recopila los datos de la bitácora en un vector
-    std::vector <std::string> registro;
+    
     std::string line;
 
     std::ifstream bitacora ("bitacora.txt");
     while (getline(bitacora,line)) {
-        registro.push_back(line);
+        
     }
 
     bitacora.close();

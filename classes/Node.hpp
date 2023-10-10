@@ -9,14 +9,17 @@
 #define NODE_HPP
 
 #include <string>
+#include <sstream>
 class Node {
     public:
         // atributos
         std::string *text;
-        Node *next;
+        Node *next,*prev;
         // constructor
         Node();
-        Node(Node *ptr);
+        Node(Node *prev,Node *next);
+        // extra
+        bool compareIp(Node *ptr);
 };
 
 #endif /* NODE_HPP */

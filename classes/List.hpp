@@ -12,9 +12,12 @@ class List {
     private:
         // atributos
         Node *head;
+        Node *tail;
     public:
         // constructor
         List();
+        // manipulación de nodos
+        void add(Node *ptr);
 };
 
 #endif /* LIST_HPP */
