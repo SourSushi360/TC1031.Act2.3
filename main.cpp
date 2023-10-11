@@ -22,41 +22,10 @@ int cc = 0;
 
     // abre la bitácora
     std::ifstream bitacora ("bitacora.txt");
-    /*
+    
     while (getline(bitacora,line)) {
         lista.add(line);
     }
-    */
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
-    // error
-    lista.add(line);
-    getline(bitacora,line);
-    lista.print(); std::cout << std::endl;
 
     lista.print();
 
