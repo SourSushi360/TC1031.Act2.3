@@ -28,13 +28,37 @@ int cc = 0;
     }
     */
     getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
     lista.add(line);
     getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
     lista.add(line);
     getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
     lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+    // error
+    lista.add(line);
+    getline(bitacora,line);
+    lista.print(); std::cout << std::endl;
+
     lista.print();
-std::cout << cc << ' ';               cc++;
 
     bitacora.close();
 }

@@ -29,7 +29,9 @@ int cc = 0;
             if (temp->compare(ptr)){
                 if (temp->next == NULL){
                     temp->next = ptr;
+                    ptr->prev = temp;
                     tail = ptr;
+                    break;
                 }
                 temp = temp->next;
             } else {
