@@ -14,9 +14,9 @@ Node::Node(std::string string) : Node::Node() {
     *this->text = string;
 }
 
-/*  compareIp recibe un pointer a un Nodo, con el cual compara el valor de la ID,
+/*  isBiggerThan recibe un pointer a un Nodo, con el cual compara el valor de la ID,
     en caso de que el ID propio sea mayor regresa true, en el caso contrario false */
-bool Node::compare(Node *ptr) {
+bool Node::isBiggerThan(Node *ptr) {
     std::stringstream streamA(*ptr->text), streamB(*this->text);
     std::string ipA, ipB, auxA, auxB;
     int ipa, ipb;

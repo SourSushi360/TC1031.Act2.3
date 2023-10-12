@@ -18,8 +18,8 @@ class Node {
         // constructor
         Node();
         Node(std::string string);
-        // extra
-        bool compare(Node *ptr);
+        // comparaciones
+        bool isBiggerThan(Node *ptr);
 };
 
 #endif /* NODE_HPP */

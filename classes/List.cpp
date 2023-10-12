@@ -13,12 +13,11 @@ List::List() {
 /*  add recibe un pointer a un nodo y no regresa nada, más lo coloca en un lugar
     ordenado dentro de la lista */
 void List::add(std::string string) {
-int cc = 0;
     Node *ptr = new Node(string);
     if (this->head == NULL) {
         this->head = ptr;
         this->tail = ptr;
-    } else if (!(this->head->compare(ptr))){
+    } else if (!(this->head->isBiggerThan(ptr))){
         this->head->prev = ptr;
         ptr->next = this->head;
         this->head = ptr;
@@ -26,7 +25,7 @@ int cc = 0;
      else {
         Node *temp = head;
         while (true){
-            if (temp->compare(ptr)){
+            if (temp->isBiggerThan(ptr)){
                 if (temp->next == NULL){
                     temp->next = ptr;
                     ptr->prev = temp;
