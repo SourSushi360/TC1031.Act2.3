@@ -45,10 +45,14 @@ void List::add(std::string string) {
 }
 
 /*  print no recibe ni regresa nada, solo imprime en orden los elementos de la lista */
-void List::print() {
+void List::print(std::string start, std::string end) {
     Node *aux = head;
+    std::string first = "n n n "+start+" n\n", second = "n n n "+end+" n\n";
+    Node strt(first), nd(second);
     while (aux != NULL){
-        std::cout << *aux->text << std::endl;
+        if (aux->isBiggerThan(&strt) && !(aux->isBiggerThan(&nd))){
+            std::cout << *aux->text << std::endl;
+        }
         aux = aux->next;
     }
 }

@@ -27,4 +27,12 @@ int main() {
     }
 
     bitacora.close();
+
+    std::string start,end;
+    std::cout << "IP de inicio\n: ";
+    std::cin >> start;
+    std::cout << "IP de fin\n: ";
+    std::cin >> end;
+
+    lista.print(start,end);
 }

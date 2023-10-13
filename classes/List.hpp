@@ -19,7 +19,7 @@ class List {
         // manipulación de nodos
         void add(std::string string);
         // extra
-        void print();
+        void print(std::string start, std::string end);
 };
 
 #endif /* LIST_HPP */
